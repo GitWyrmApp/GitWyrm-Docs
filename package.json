@@ -1,0 +1,17 @@
+{
+  "name": "gitwyrm-docs",
+  "version": "0.1.0",
+  "description": "GitWyrm documentation site",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "^3.4.2",
+    "vitepress": "^1.6.4"
+  }
+}

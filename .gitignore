@@ -1,0 +1,10 @@
+node_modules/
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+*.local
+.env
+.env.*
+.DS_Store
+
+# Local-only agent notes
+CLAUDE.local.md
