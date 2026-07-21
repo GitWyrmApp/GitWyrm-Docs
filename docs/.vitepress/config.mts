@@ -26,6 +26,10 @@ export default defineConfig({
         text: 'Introduction',
         items: [{ text: 'Getting Started', link: '/guide/getting-started' }],
       },
+      {
+        text: 'Deployment',
+        items: [{ text: 'Enterprise Deployment', link: '/guide/enterprise-deployment' }],
+      },
     ],
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/Wutname1/GitWyrm' }],
