@@ -141,8 +141,11 @@ log.
 ### Installing without internet access
 
 There is no separate offline installer. If the target machines cannot reach the
-CDN at install time, download the full `GitWyrm-Setup.exe` release asset from
-the [releases page](https://github.com/Wutname1/GitWyrm/releases) and deploy
+CDN at install time, download the full installer for the version you are
+deploying - `GitWyrm_<version>_x64-setup.exe` (or `arm64`) from the
+[releases page](https://github.com/Wutname1/GitWyrm/releases), or the
+version-pinned copy at
+`https://cdn.gitwyrm.com/releases/<version>/GitWyrm-Setup.exe` - and deploy
 that directly instead of the bootstrapper. It accepts the same `/S` switch.
 
 ## Uninstalling
