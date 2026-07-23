@@ -7,7 +7,7 @@ export default defineConfig({
 
   head: [
     ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    ['meta', { name: 'theme-color', content: '#0a0e0e' }],
+    ['meta', { name: 'theme-color', content: '#121212' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:site_name', content: 'GitWyrm' }],
   ],
