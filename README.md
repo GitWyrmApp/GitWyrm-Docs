@@ -4,7 +4,7 @@
 [![Website](https://img.shields.io/badge/site-gitwyrm.com-2dd4a7)](https://gitwyrm.com)
 
 Documentation for [GitWyrm](https://gitwyrm.com), a fast, focused Git client for
-Windows.
+Windows and Linux.
 
 Built with **VitePress**, hosted on Cloudflare Pages at **docs.gitwyrm.com**.
 
@@ -30,6 +30,7 @@ docs/
     config.mts       # nav, sidebar, site metadata
   guide/
     getting-started.md
+    install-linux.md
   public/             # static assets (logo, favicon)
   index.md            # homepage
 ```

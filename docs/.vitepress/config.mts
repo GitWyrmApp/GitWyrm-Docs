@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: 'GitWyrm',
-  description: 'Documentation for GitWyrm, a fast, focused Git client for Windows.',
+  description: 'Documentation for GitWyrm, a fast, focused Git client for Windows and Linux.',
   lang: 'en-US',
 
   head: [
@@ -24,7 +24,10 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Introduction',
-        items: [{ text: 'Getting Started', link: '/guide/getting-started' }],
+        items: [
+          { text: 'Getting Started', link: '/guide/getting-started' },
+          { text: 'Install on Linux', link: '/guide/install-linux' },
+        ],
       },
       {
         text: 'Deployment',
