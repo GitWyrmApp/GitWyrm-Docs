@@ -13,7 +13,7 @@ This matters for deployment: GitWyrm must run in a **user** context, not as
 system profile, where no real user can launch it.
 
 The file you deploy, `GitWyrm-Setup.exe`, is a small bootstrapper. It downloads
-the current release from `https://cdn.gitwyrm.com` and installs it.
+the current release through `https://cdn.gitwyrm.com` and installs it.
 
 ## Installer switches
 
@@ -39,7 +39,7 @@ The bootstrapper returns a status your deployment tool can act on.
 | ---- | ----------------------------------------------------------- |
 | `0`  | Success                                                     |
 | `1`  | Bad command line                                            |
-| `2`  | Download failed - check network access to `cdn.gitwyrm.com` |
+| `2`  | Download failed - check the [network requirements](#network-requirements) |
 | `3`  | The installer ran but failed                                |
 
 ### Logging
@@ -119,7 +119,16 @@ user closes GitWyrm.
 
 ## Network requirements
 
-Setup downloads over HTTPS from `cdn.gitwyrm.com`. Allow egress to that host.
+Setup downloads over HTTPS. Allow egress to these hosts:
+
+| Host                                   | Used for                                        |
+| -------------------------------------- | ----------------------------------------------- |
+| `cdn.gitwyrm.com`                      | Setup, the bundled git tools, and the beta channel |
+| `github.com`                           | Release downloads and stable update checks      |
+| `release-assets.githubusercontent.com` | The release files `github.com` hands off to     |
+
+GitWyrm's own update checks use the same hosts, so allow them for installed
+copies too, not just for setup.
 
 ### Proxies
 
@@ -145,8 +154,8 @@ CDN at install time, download the full installer for the version you are
 deploying - `GitWyrm_<version>_x64-setup.exe` (or `arm64`) from the
 [releases page](https://github.com/Wutname1/GitWyrm/releases), or the
 version-pinned copy at
-`https://cdn.gitwyrm.com/releases/<version>/GitWyrm-Setup.exe` - and deploy
-that directly instead of the bootstrapper. It accepts the same `/S` switch.
+`https://github.com/Wutname1/GitWyrm/releases/download/<version>/GitWyrm-Setup.exe` -
+and deploy that directly instead of the bootstrapper. It accepts the same `/S` switch.
 
 ## Uninstalling
 

@@ -63,13 +63,8 @@ above is added.
 
 ## Fedora, RHEL, or a related distribution
 
-```bash
-curl -fL -o GitWyrm-x86_64.rpm https://cdn.gitwyrm.com/installers/latest/GitWyrm-x86_64.rpm
-sudo dnf install ./GitWyrm-x86_64.rpm
-```
+Use the [AppImage](#appimage-recommended). It runs on these distributions and
+keeps itself up to date.
 
-The RPM repository is not available yet, so replacing the direct `.rpm`
-package remains a manual step.
-
-All three links always point to the latest stable release. You can also choose
+Both download links always point to the latest stable release. You can also choose
 a different package from the download card on [gitwyrm.com](https://gitwyrm.com).
